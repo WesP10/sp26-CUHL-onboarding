@@ -98,8 +98,9 @@ void updateDutyCycle(uint8_t distance) {
 //     duty_cycle = 0;
 //   }
  
-//   // Update previous error
+
 //   previous_error = error;
+//   new comment
  
 //   // Debugging information
 //   Serial.print("PID Output: "); Serial.println(pid_output);
