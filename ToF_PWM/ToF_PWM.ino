@@ -2,7 +2,6 @@
 #include "Adafruit_VL6180X.h"
  
 Adafruit_VL6180X vl = Adafruit_VL6180X();
-//Sends signal from Arduino to pwm to change duty cycle
 int pwm_ctrl_pin = 9;
 //Intial duty cycle [0, 255], 0 corresponds to 0% and 255 to 100%
 int duty_cycle = 255;
