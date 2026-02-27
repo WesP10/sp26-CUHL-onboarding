@@ -101,7 +101,7 @@ void updateDutyCycle(uint8_t distance) {
 //     duty_cycle = 0;
 //   }
  
-//   // Update previous error
+
 //   previous_error = error;
  
 //   // Debugging information
