@@ -10,7 +10,7 @@ int duty_cycle = 255;
 int duty_incr = 5;
 // Target distance for stability (e.g., mid-range of acceptable values)
 float target_distance = 17.0;
-//VL6180X_ALS_GAIN_5: Specifies the gain setting for the light measurement.
+// VL6180X_ALS_GAIN_5: Specifies the gain setting for the light measurement.
 // Gain helps amplify the sensor's readings depending on the intensity of light (e.g., low-light environments may require higher gain).
 // VL6180X_ALS_GAIN_1 (no amplification),
 // VL6180X_ALS_GAIN_2 (2x amplification), etc.
@@ -26,10 +26,7 @@ float integral = 0;        // Accumulates error for integral term
 void setup() {
   Serial.begin(115200);
   // wait for serial port to open on native usb devices
-  while (!Serial) {
-    delay(1);
-  }
- Serial.println("Attempting to initialize VL6180X sensor...");
+  Serial.println("Attempting to initialize VL6180X sensor...");
   if (!vl.begin()) {
     Serial.println("Sensor initialization failed!");
     while(1);
